@@ -19,7 +19,7 @@ body {
 
 .nav-bar {
 	display: flex;
-	padding: 40px 120px;
+	padding: 40px 110px;
 	}
 
 .nav-logo img{
@@ -63,14 +63,15 @@ width: 100%
 	border: 0;
 	background: #3c6c8b;
 	font-weight: bold;
-cursor: pointer;	}
+	cursor: pointer;
+	}
 
 .nav-link .btn {
 	float: right;
 	}
 
 .banner-tittle{
-	margin: 80px 130px;
+	margin: 80px 120px;
 	color: #fff;
 	}
 
@@ -129,3 +130,6 @@ cursor: pointer;	}
 {
 	text-decoration: none; color: black;
 	}
+.banner-tittle h2 span { font-size: 40px; }
+
+
