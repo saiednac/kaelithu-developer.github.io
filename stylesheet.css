@@ -1,0 +1,121 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	}
+.background{
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.6)),url(Imagens/background.png) ;
+	background-position: center;
+	background-size: cover;
+	overflow-x:hidden ;
+	position: relative;
+	}
+
+.top-bar{
+	width: 100%;
+
+	}
+
+.nav-bar {
+	display: flex;
+	padding: 40px 120px;
+	}
+
+.nav-logo img{
+	width: 135px;
+	}
+.nav-link{
+	flex: 1;
+	}
+.nav-link ul {
+	margin-left: 50px;
+	display: inline;
+	}
+.nav-link ul li {
+	list-style: none ;
+	display: inline-block;
+	padding: 8px 25px;
+	}
+
+.nav-link ul a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 13px;
+	}
+
+.nav-link ul li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: #3c6c8b;
+	display: block;
+margin: auto;
+	transition: .5s;
+	}
+
+.nav-link ul li:hover::after{
+width: 100%
+	}
+
+.btn{
+	padding: 10px 20px;
+	border: 0;
+	background: #3c6c8b;
+	font-weight: bold;
+cursor: pointer;	}
+
+.nav-link .btn {
+	float: right;
+	}
+
+.banner-tittle{
+	margin: 80px 130px;
+	color: #fff;
+	}
+
+.banner-tittle h1{
+	font-size: 64px;
+	margin-bottom: 30px;
+	}
+
+.banner-tittle h1 span {
+	color: #3c6c8b;
+	}
+
+.vertical-bar{
+	height:100%;
+	background: #000;
+	top:0;
+	left:0;
+	position: absolute;
+	}
+.search-icon{
+	height: 60%;
+	width: 80px;
+	}
+.search-icon .fa{
+	margin: 45px 23px;
+	display: block;
+	color: #fff;
+	font-size: 30px;
+	cursor: pointer;
+	}
+
+.social-icons{
+	height: 35%;
+	width: 80px;
+	background: #3c6c8b;
+	text-align: center;
+	padding-top: 27%;
+	bottom: 0;
+	position: absolute;
+	}
+.social-icons .fa{
+	margin: 15px 23px;
+	display: block;
+	padding: 8px;
+	border: 1px solid #000;
+	border-radius: 50%;
+	cursor: pointer;
+	}
