@@ -119,3 +119,13 @@ cursor: pointer;	}
 	border-radius: 50%;
 	cursor: pointer;
 	}
+
+.clean-link:link{
+	text-decoration: none;
+	color: black;
+	}
+
+.vertical-bar .social-icons a:hover,.vertical-bar .social-icons a:visited,.vertical-bar .social-icons a:link,.vertical-bar .social-icons a:active
+{
+	text-decoration: none; color: black;
+	}
