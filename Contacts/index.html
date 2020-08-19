@@ -19,16 +19,32 @@
             <i class="fa fa-close" onclick="closeMenuRight()"></i>
 
             <ul>
-                <a href="../index.html"><li>HOME</li></a>
-                <a href="#"><li>PROJECTS</li></a>
-                <a href="#"><li>ABOUT US</li></a>
+                <a href="../Home"><li>HOME</li></a>
+                <a href="../Projects"><li>PROJECTS</li></a>
+                <a href="../AboutUs"><li>ABOUT US</li></a>
 
             </ul>
-            <button type="button" class="btn" onclick="window.location.href='#'">CONTACT</button>
+            <button type="button" class="btn" onclick="window.location.href='..'">CONTACT</button>
         </div>
         <i class="fa fa-bars" onclick="showMenuRight()"></i>
     </div>
+    <div class="contact_form">
+        <form action="#">
 
+
+            <label for="name"><h1>Name</h1></label>
+            <input type="text" id="name" name="name" placeholder="Write Your Name">
+
+            <label for="email"><h1>Email</h1></label>
+            <input type="text" id="email" name="email" placeholder="Write Your Email">
+
+            <label for="subject"><h1>Subject</h1></label>
+            <textarea id="subject" name="subject" placeholder="Write Your Message" ></textarea>
+
+            <input type="submit" value="SEND">
+
+        </form>
+    </div>
 </div>
 <div class="vertical-bar" id="vertical-bar">
     <div class="search-icon">
