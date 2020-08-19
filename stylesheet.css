@@ -47,7 +47,7 @@ body {
 	height: 2px;
 	background: #3c6c8b;
 	display: block;
-margin: auto;
+	margin: auto;
 	transition: .5s;
 	}
 
@@ -79,10 +79,13 @@ width: 100%
 	margin-bottom: 30px;
 	}
 
-.banner-tittle h1 span {
+.banner-tittle h1 .tittle {
 	color: #3c6c8b;
 	}
 
+.banner-tittle h1 .phrase {
+	font-size: 50px;
+	}
 .vertical-bar{
 	height:100%;
 	background: #000;
@@ -92,34 +95,37 @@ width: 100%
 	}
 .search-icon{
 	height: 60%;
-	width: 50px;
+	width: 60px;
 	}
 .search-icon .fa{
-	margin: 25px 15px;
+	margin: 25px 17px;
 	display: block;
 	color: #fff;
-	font-size: 20px;
+	font-size: 25px;
 	cursor: pointer;
 	}
 
 .social-icons{
 	height: 35%;
-	width: 50px;
-	font-size: 20px;
+	width: 60px;
+	font-size: 25px;
 	background: #3c6c8b;
 	text-align: center;
 	padding-top: 20%;
 	bottom: 0;
 	position: absolute;
 	}
+
 .social-icons .fa{
-	margin: 15px 5px;
+	margin: 5px 5px;
 	display: block;
-	padding: 8px;
-	border: 1px solid #000;
+	padding: 10px;
+	border: 1px black solid;
 	border-radius: 50%;
 	cursor: pointer;
+
 	}
+
 
 .clean-link:link{
 	text-decoration: none;
