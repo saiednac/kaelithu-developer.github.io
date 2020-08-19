@@ -12,24 +12,21 @@ body {
 	position: relative;
 	}
 
-.top-bar{
-	width: 100%;
-
-	}
-
 .nav-bar {
 	display: flex;
 	padding: 40px 110px;
+
 	}
 
 .nav-logo img{
-	width: 135px;
+	width: 75px;
+	margin-left: 20px;
 	}
-.nav-link{
+.nav-link{margin-top: 20px;
 	flex: 1;
 	}
 .nav-link ul {
-	margin-left: 50px;
+	margin-left: 20px;
 	display: inline;
 	}
 .nav-link ul li {
@@ -41,7 +38,7 @@ body {
 .nav-link ul a{
 	color: #fff;
 	text-decoration: none;
-	font-size: 13px;
+	font-size: 15px;
 	}
 
 .nav-link ul li::after{
@@ -64,10 +61,12 @@ width: 100%
 	background: #3c6c8b;
 	font-weight: bold;
 	cursor: pointer;
+
 	}
 
 .nav-link .btn {
 	float: right;
+
 	}
 
 .banner-tittle{
@@ -93,27 +92,28 @@ width: 100%
 	}
 .search-icon{
 	height: 60%;
-	width: 80px;
+	width: 50px;
 	}
 .search-icon .fa{
-	margin: 45px 23px;
+	margin: 25px 15px;
 	display: block;
 	color: #fff;
-	font-size: 30px;
+	font-size: 20px;
 	cursor: pointer;
 	}
 
 .social-icons{
 	height: 35%;
-	width: 80px;
+	width: 50px;
+	font-size: 20px;
 	background: #3c6c8b;
 	text-align: center;
-	padding-top: 27%;
+	padding-top: 20%;
 	bottom: 0;
 	position: absolute;
 	}
 .social-icons .fa{
-	margin: 15px 23px;
+	margin: 15px 5px;
 	display: block;
 	padding: 8px;
 	border: 1px solid #000;
@@ -130,7 +130,6 @@ width: 100%
 {
 	text-decoration: none; color: black;
 	}
-.banner-tittle h2 span { font-size: 40px; }
 
 .nav-bar .fa{
 	display: none;
@@ -151,7 +150,7 @@ width: 100%
 	}
 .nav-bar{padding: 10px 30px;}
 
-.fa-bars{position: absolute; right: 20px; top: 10px;}
+.fa-bars{position: absolute; right: 20px; top: 15px;}
 
 	.nav-bar .fa{display: block;
 		color: #fff;
@@ -160,6 +159,7 @@ width: 100%
 		cursor: pointer;}
 
 	.nav-link{
+		margin-top: 0;
 		height:100vh;
 		width: 200px;
 		background: #000;
@@ -167,7 +167,7 @@ width: 100%
 		top: 0;
 		position: absolute;
 		z-index: 2;
-		transition: .5s; 
+		transition: .5s;
 		}
 
 	.nav-link ul a{
@@ -178,6 +178,7 @@ width: 100%
 		float: none;
 		margin-left: 25px;
 		margin-top: 10px;
+
 		}
 
 
