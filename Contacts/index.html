@@ -24,12 +24,12 @@
                 <a href="../AboutUs"><li>ABOUT US</li></a>
 
             </ul>
-            <button type="button" class="btn" onclick="window.location.href='..'">CONTACT</button>
+            <button type="button" class="btn" onclick="window.location.href='../Contacts'">CONTACT</button>
         </div>
         <i class="fa fa-bars" onclick="showMenuRight()"></i>
     </div>
     <div class="contact_form">
-        <form action="#">
+        <form action="mail.php" method="POST">
 
 
             <label for="name"><h1>Name</h1></label>
@@ -38,8 +38,8 @@
             <label for="email"><h1>Email</h1></label>
             <input type="text" id="email" name="email" placeholder="Write Your Email">
 
-            <label for="subject"><h1>Subject</h1></label>
-            <textarea id="subject" name="subject" placeholder="Write Your Message" ></textarea>
+            <label for="message"><h1>Subject</h1></label>
+            <textarea id="message" name="subject" placeholder="Write Your Message" ></textarea>
 
             <input type="submit" value="SEND">
 

@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>About Us</title>
-</head>
+<html lang="pt">
+
+<meta name="viewport" content="width=device-width,inicial-scale=1">
+<title>M&J - Mobile Dev.</title>
+<link rel="stylesheet" href="../stylesheet.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 <body>
+
+<div class="background">
+
+    <div class="nav-bar" id="nav-bar">
+        <div class="nav-logo">
+            <img src="../Imagens/logo.png">
+        </div>
+        <div class="nav-link" id="nav-link">
+            <i class="fa fa-close" onclick="closeMenuRight()"></i>
+
+            <ul>
+                <a href="../Home"><li>HOME</li></a>
+                <a href="../Projects"><li>PROJECTS</li></a>
+                <a href="../AboutUs"><li>ABOUT US</li></a>
+
+            </ul>
+            <button type="button" class="btn" onclick="window.location.href='../Contacts'">CONTACT</button>
+        </div>
+        <i class="fa fa-bars" onclick="showMenuRight()"></i>
+    </div>
+
+    <!-- banner -->
+
+</div>
+<div class="vertical-bar" id="vertical-bar">
+    <div class="search-icon">
+        <i class="fa fa-th-list"></i>
+
+    </div>
+    <div class="social-icons">
+        <a  target="_blank" href="https://www.facebook.com/saiednac/"><i class="fa fa-facebook"></i></a>
+        <a target="_blank" href="https://www.instagram.com/_saiednac_/"><i class="fa fa-instagram"></i></a>
+        <a target="_blank" href="https://twitter.com/KAELITHU"><i class="fa fa-twitter"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/kaelithu/"> <i class="fa fa-linkedin"></i></a>
+    </div>
+</div>
+
+
+<script>
+
+    function closeMenuRight() {
+        document.getElementById("nav-link").style.right = "-200px";
+    }
+    function showMenuRight() {
+        document.getElementById("nav-link").style.right = "0";
+    }
+
+
+</script>
 
 </body>
 </html>
