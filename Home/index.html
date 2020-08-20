@@ -29,21 +29,33 @@
         <i class="fa fa-bars" onclick="showMenuRight()"></i>
     </div>
     <div class="banner-tittle">
-        <h1 id="banner-tittle"><span class="tittle">Freelancing</span> Mobile Developers <br> <span class="phrase">- Mobile Solutions Made Simple</span> - </h1>
+        <h1><span class="tittle">Freelancing</span> Mobile Developers <br> <span class="phrase">- Mobile Solutions Made Simple</span> - </h1>
 
             <button type="button" class="btn" Onclick="window.location.href='../Projects'">EXPLORE</button>
         </div>
    </div>
-    <div class="vertical-bar" id="vertical-bar">
-        <div class="search-icon">
-            <i class="fa fa-th-list"></i>
 
+     <div class="vertical-bar" id="vertical-bar" >
+        <div class="search-icon">
+            <i class="fa fa-th-list" id="fa-th-list"  onclick="showMenuLeft()"></i>
+            <i class="fa fa-close" id="fa-close" onclick="closeMenuLeft()" style="display: none"></i>
         </div>
-        <div class="social-icons">
-            <a  target="_blank" href="https://www.facebook.com/saiednac/"><i class="fa fa-facebook"></i></a>
-            <a target="_blank" href="https://www.instagram.com/_saiednac_/"><i class="fa fa-instagram"></i></a>
-            <a target="_blank" href="https://twitter.com/KAELITHU"><i class="fa fa-twitter"></i></a>
-            <a target="_blank" href="https://www.linkedin.com/in/kaelithu/"> <i class="fa fa-linkedin"></i></a>
+        <div class="social-icons" id="Salsa">
+            <img src="../Imagens/salsa.png" class="profile" onclick="showMenuLeft()">
+
+
+            <a target="_blank" href="https://www.facebook.com/miguel.salsa"><i id="salsa-facebook" class="fa fa-facebook" style="display: none"></i></a>
+            <a target="_blank" href="https://www.instagram.com/migsalsa/"><i id="salsa-instagram" class="fa fa-instagram"  style="display: none"></i></a>
+
+            <a target="_blank" href="https://www.linkedin.com/in/miguel-salsa-41252216b/"> <i id="salsa-linkedin" class="fa fa-linkedin"  style="display: none"></i></a>
+        </div>
+        <div class="social-icons" id="social-icons">
+            <img src="../Imagens/cgd.png" class="profile" onclick="showMenuLeft()">
+
+
+            <a  target="_blank" href="https://www.facebook.com/saiednac/"><i id="fa-facebook" class="fa fa-facebook" style="display: none"></i></a>
+            <a target="_blank" href="https://www.instagram.com/_saiednac_/"><i id="fa-instagram" class="fa fa-instagram"  style="display: none"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/kaelithu/"> <i id="fa-linkedin" class="fa fa-linkedin"  style="display: none"></i></a>
         </div>
     </div>
 
@@ -55,6 +67,49 @@
         }
         function showMenuRight() {
             document.getElementById("nav-link").style.right = "0";
+        }
+
+        function closeMenuLeft() {
+            document.getElementById("vertical-bar").style.left = "-150px";
+            document.getElementById("fa-close").style.display = "none";
+            document.getElementById("fa-th-list").style.display = "block";
+            // -------------------------------------------------------- //
+            document.getElementById("social-icons").style.width="60px";
+            // -------------------------------------------------------- //
+            document.getElementById("fa-facebook").style.display = "none";
+            document.getElementById("fa-instagram").style.display = "none";
+            document.getElementById("fa-linkedin").style.display = "none";
+            document.getElementById("social-icons").style.transition="0.5s";
+            // -------------------------------------------------------- //
+            document.getElementById("Salsa").style.width="60px";
+            // -------------------------------------------------------- //
+            document.getElementById("salsa-facebook").style.display = "none";
+            document.getElementById("salsa-instagram").style.display = "none";
+            document.getElementById("salsa-linkedin").style.display = "none";
+            document.getElementById("Salsa").style.transition="0.5s";
+
+        }
+        function showMenuLeft() {
+            document.getElementById("vertical-bar").style.left = "0";
+            document.getElementById("fa-th-list").style.display = "none";
+            document.getElementById("fa-close").style.display = "block";
+            // -------------------------------------------------------- //
+            document.getElementById("social-icons").style.width="210px";
+            // -------------------------------------------------------- //
+            document.getElementById("fa-facebook").style.display = "block";
+            document.getElementById("fa-instagram").style.display = "block";
+            document.getElementById("fa-linkedin").style.display = "block";
+            document.getElementById("social-icons").style.transition="0s";
+            // -------------------------------------------------------- //
+            document.getElementById("Salsa").style.width="210px";
+            // -------------------------------------------------------- //
+            document.getElementById("salsa-facebook").style.display = "block";
+            document.getElementById("salsa-instagram").style.display = "block";
+            document.getElementById("salsa-linkedin").style.display = "block";
+            document.getElementById("Salsa").style.transition="0s";
+
+
+
         }
 
 
