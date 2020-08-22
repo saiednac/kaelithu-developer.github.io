@@ -4,7 +4,10 @@
     <bookmark url="file://$PROJECT_DIR$/stylesheet.css" line="163" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c57697e2-d7a9-41ca-8a02-c4e927a8f069" name="Default Changelist" comment="" />
+    <list default="true" id="c57697e2-d7a9-41ca-8a02-c4e927a8f069" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/AboutUs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/AboutUs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheet.css" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AboutUs/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="204">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -37,12 +40,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="232" lean-forward="true" selection-start-line="232" selection-end-line="232" />
+            <state relative-caret-position="393">
+              <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
               <folding>
                 <element signature="e#3536#3558#0" />
-                <element signature="e#3573#3597#0" />
-                <element signature="e#5211#5371#0" />
               </folding>
             </state>
           </provider>
@@ -163,12 +164,12 @@
       <workItem from="1597757451264" duration="15279000" />
       <workItem from="1597841873049" duration="6622000" />
       <workItem from="1597932291524" duration="14189000" />
-      <workItem from="1598094358933" duration="5062000" />
+      <workItem from="1598094358933" duration="5610000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53752000" />
+    <option name="totallyTimeSpent" value="54300000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -304,8 +305,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AboutUs/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -323,12 +324,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stylesheet.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="232" lean-forward="true" selection-start-line="232" selection-end-line="232" />
+        <state relative-caret-position="393">
+          <caret line="397" lean-forward="true" selection-start-line="397" selection-end-line="397" />
           <folding>
             <element signature="e#3536#3558#0" />
-            <element signature="e#3573#3597#0" />
-            <element signature="e#5211#5371#0" />
           </folding>
         </state>
       </provider>
