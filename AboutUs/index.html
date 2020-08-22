@@ -48,6 +48,33 @@
     </div>
 
     <!-- banner -->
+    <div class="about_us_tittle">
+        <h1> ABOUT US </h1>
+    </div>
+    <div class="about_us">
+        <img src="../Imagens/AboutUs_Salsa.png" class="Salsa">
+
+        <div class="text_container">
+            <div class="container_top">
+                <i class="fa fa-caret-left"></i>
+                <h1>Miguel Salsa</h1>
+
+
+
+            </div>
+            <div class="container_bottom">
+                <i class="fa fa-caret-right" id="arrow_right"></i>
+                <i class="fa fa-caret-left" id="arrow_left" ></i>
+
+                <h1>Jo&atildeo Candeias</h1>
+
+
+            </div>
+        </div>
+
+        <img src="../Imagens/AboutUs_Candeias.png" class="CGD">
+
+    </div>
 
 </div>
 
@@ -78,11 +105,17 @@
 
 <script>
 
+
     function closeMenuRight() {
         document.getElementById("nav-link").style.right = "-210px";
+        document.getElementById("Salsa-right").style.display = "none";
+        document.getElementById("social-icons-right").style.display = "none";
+
     }
     function showMenuRight() {
         document.getElementById("nav-link").style.right = "0";
+        document.getElementById("Salsa-right").style.display = "block";
+        document.getElementById("social-icons-right").style.display = "block";
     }
 
     function closeMenuLeft() {

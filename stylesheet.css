@@ -128,6 +128,7 @@ margin: 5px 5px;
 	padding: 10px;
 	cursor: pointer;
 float: right;
+	color: #fff;
 
 	}
 
@@ -199,6 +200,69 @@ margin-top: 150px;
 	color: #3c6c8b;
 	}
 
+.about_us_tittle {
+	background-color: #3c6c8b;
+	margin: 0px 120px; padding: 5px 5px; text-align: center
+	}
+
+.about_us_tittle h1 {font-size: 30px}
+
+.about_us {
+	margin: 5px 120px; display: flex; flex-direction: row;
+	}
+
+.about_us img {
+	display: block;
+	width: 20%;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	float: left;
+	object-fit: cover;
+	transition: .5s;
+	}
+
+.Salsa{float: left;}
+.CGD{float: right;}
+
+.about_us .text_container{
+	margin: 0 5px;
+	display: block;
+	width: 100%;
+	float: right; 	transition: .5s;
+
+	}
+.text_container div {
+	display: block;
+	-webkit-box-sizing: border-box;
+    height: calc(50% - 2.5px);
+	background: rgba(255, 255, 255, 0.4);
+	width: 100%;
+	padding: 10px 10px; 	transition: .5s;
+
+	}
+
+.text_container .container_top{ margin-bottom: 5px ;}
+
+.text_container .fa{
+	font-size: 40px;
+	display:inline-block;
+	padding: 5px;
+	cursor: pointer;
+	color: #fff;
+	}
+
+.text_container h1{
+	font-size: 20px;
+	display:inline-block;
+	color: #fff;
+	}
+.container_top .fa{ float: left}
+.container_bottom .fa {float: right}
+
+.container_bottom h1{float: right}
+
+#arrow_left{display: none}
 /* -------------------------------------------------- */
 
 @media (max-width: 860px){
@@ -269,7 +333,7 @@ margin-top: 150px;
 		position: absolute;
 		display: inline-block;
 		left: 0;
-height: 60px;
+		height: 60px;
 
 		}
 
@@ -292,6 +356,80 @@ height: 60px;
 		float: right;
 		width: 45px}
 
+	.about_us {
+		margin: 5px 120px; display: inline-block;
+		}
+	.about_us img {
+		width:150px;
+		height: 200px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: inline-block ;
+		}
+
+
+	.about_us_tittle {
+		background-color:#3c6c8b; margin: 0 120px; padding: 2px 2px;
+		}
+
+	.about_us_tittle h1 {font-size: 20px; text-align: center}
+
+	.about_us .text_container { display: inline-block;
+		-webkit-box-sizing: border-box;
+		float:right; width:calc(100% - 155px);
+		height: 200px; margin: 0;
+		}
+
+	.text_container div{-webkit-box-sizing: border-box;
+		display: inline-block ;
+		width: 100%; height: 200px;}
+
+	.about_us .CGD {margin-top: 5px}
+
+	.container_bottom .fa {float: left}
+
+	.container_bottom h1{float: left}
+
+	#arrow_left{display: inline-block}
+	#arrow_right{display: none}
+	}
+
+@media (max-width: 600px){
+
+
+	.about_us img {
+		width:65px;
+		height: 115px;
+
+		}
+
+	.about_us .CGD {margin-top: 90px}
+	.about_us .text_container {
+		float:right; width:calc(100% - 70px);
+		height: 200px; margin: 0;
+		}
+.text_container .container_bottom {width: 100%; -webkit-box-sizing: border-box;}
+.text_container .container_top{width: 100%; -webkit-box-sizing: border-box;}
+
+
+	}
+
+
+@media (max-width: 400px){
+
+	.projects{	color: #fff; 	margin: 0 60px;
+
+		}
+
+	.projects  h1{ text-align: center;
+		font-size: 45px;
+		margin-top: 100px;
+		}
+	.about_us img {
+		width:250px;
+		height: 200px;
+
+		}
 
 	}
 

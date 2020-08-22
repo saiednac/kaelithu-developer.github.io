@@ -92,11 +92,15 @@
 
     function closeMenuRight() {
         document.getElementById("nav-link").style.right = "-210px";
+        document.getElementById("Salsa-right").style.display = "none";
+        document.getElementById("social-icons-right").style.display = "none";
+
     }
     function showMenuRight() {
         document.getElementById("nav-link").style.right = "0";
+        document.getElementById("Salsa-right").style.display = "block";
+        document.getElementById("social-icons-right").style.display = "block";
     }
-
     function closeMenuLeft() {
         document.getElementById("vertical-bar").style.left = "-150px";
         document.getElementById("fa-close").style.display = "none";
