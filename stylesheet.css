@@ -22,6 +22,8 @@ body {
 .nav-logo img {
 	width: 75px;
 	margin-left: 20px;
+	cursor: pointer;
+
 	}
 
 .nav-link {margin-top: 20px;
