@@ -284,7 +284,7 @@ body {
 	border: 1px solid rgba(255, 255, 255, 1);
 	padding: 5px;
 	font-size: 30px;
-	text-align: center; width: 25%;
+	text-align: center; width: 30%;
 	}
 
 .grid-container img {
@@ -303,8 +303,48 @@ body {
 	}
 
 .grid-container .w3-display-middle {width: 100%;height: 100%}
+/* -------------------------------------------------- */
+
+.app{margin: 5px 140px; display: flex; flex-direction: row;}
+/* Slideshow container */
+.slideshow-container {
+display: block;
+ 	width: 30%;
+transition: .5s;
+	}
+
+.slideshow-container img {border: 2px solid white; padding: 5px 5px;
+	object-fit: cover;
+transition: .5s;
+
+	}
+/* Hide the images by default */
+.mySlides {
+	display: none;
+	}
 
 
+
+
+
+/* -------------------------------------------------- */
+.app_info{
+transition: .5s;
+	margin: 0 25px;
+	display:block;
+	width: 100%; height: available;
+	float: right;background-color: rgba(255,255,255,0.4);
+	}
+
+.app_info h1{ text-align: left; font-weight: bold; width: 100%;
+color: white;
+	margin: 15px 25px; float: left; font-size: 22px;
+	}
+.app_info h2{ text-align: left; font-weight: lighter; width: 100%;
+color: white;
+	margin: 0 25px; float: left; font-size: 22px;
+	}
+.app_info spam{color:#000; font-weight: lighter }
 /* -------------------------------------------------- */
 
 @media (max-width: 860px) {
@@ -444,6 +484,20 @@ body {
 	.about_us {
 		margin: 5px 40px;
 		}
+
+
+.app{margin: 5px 40px; height: available}
+.slideshow-container{width: 35%}
+	.app_info h1{ text-align: left; font-weight: bold; width: 100%;
+
+		margin: 15px 15px; float: left; font-size: 15px;
+		}
+	.app_info h2{ text-align: left; font-weight: lighter; width: 100%;
+
+		margin: 0 15px; float: left; font-size: 15px;
+		}
+	.app_info spam{color:#000; font-weight: lighter }
+
 	}
 
 @media (max-width: 600px) {
