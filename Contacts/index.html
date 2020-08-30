@@ -2,9 +2,10 @@
 <html lang="pt">
 
 <meta name="viewport" content="width=device-width,inicial-scale=1">
-<title>M&J - Mobile Dev.</title>
+<title>M&J - Contacts</title>
 <link rel="stylesheet" href="../stylesheet.css" >
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="../Imagens/logo.png">
 
 
 <body>
@@ -47,18 +48,27 @@
         <i class="fa fa-bars" onclick="showMenuRight()"></i>
     </div>
     <div class="contact_form">
+
+        <div class="form_text">
+            <h1>Do you have a new project?<br> <spam>Contact us!</spam></h1>
+            <br>
+            <h2>Do you have a project that you want to bring to life? Talk to us! We will make a plan for your project to make sure you get the best.</h2>
+        </div>
+
         <form action="https://formspree.io/maypzekn" method="POST">
+            <h1>SEND US A MESSAGE</h1>
 
-            <label for="name"><h1>Name</h1></label>
-            <input type="text" id="name" name="name" placeholder="Write Your Name">
+            <input type="text" id="name" name="name" placeholder="Name" required>
+            <input type="text" id="email" name="_replyto" placeholder="Email" required>
+            <label for="type"></label><select name="type" id="type">
+                <option value="App Design">App Desgin</option>
+                <option value="Build App">Build App</option>
+                <option value="Full Project">Full Project</option>
+                <option value="Others">Others</option>
+            </select>
+            <textarea id="message" name="subject" placeholder="Message" required></textarea>
 
-            <label for="email"><h1>Email</h1></label>
-            <input type="text" id="email" name="_replyto" placeholder="Write Your Email">
-
-            <label for="message"><h1>Subject</h1></label>
-            <textarea id="message" name="subject" placeholder="Write Your Message" ></textarea>
-
-            <input type="submit" value="SEND">
+            <div class="bttn_submit">   <input type="submit" value="SEND"> </div>
 
         </form>
     </div>
