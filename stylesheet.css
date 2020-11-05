@@ -70,6 +70,7 @@ body {
 
 	}
 
+
 .nav-link .btn {
 	float: right;
 
@@ -102,9 +103,8 @@ body {
 	height: 100%;
 	background: #000;
 	top: 0;
-	left: -150px;
 	position: fixed;
-	width: 210px;
+	width: 60px;
 	transition: .5s;
 	z-index: 1;
 	overflow-x: hidden;
@@ -144,7 +144,6 @@ body {
 	display: inline-block;
 	padding: 10px;
 	cursor: pointer;
-	float: right;
 	color: #fff;
 
 	}
@@ -154,7 +153,7 @@ body {
 	padding: 5px;
 	cursor: pointer;
 	float: right;
-	width: 45px;}
+	width: 50px;}
 
 
 .vertical-bar .social-icons a:hover, .vertical-bar .social-icons a:visited, .vertical-bar .social-icons a:link, .vertical-bar .social-icons a:active {
