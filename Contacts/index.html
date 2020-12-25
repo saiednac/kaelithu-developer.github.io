@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt">
 
-<meta name="viewport" content="width=device-width,inicial-scale=1">
-<title>Candeias - Contacts</title>
-<link rel="stylesheet" href="../stylesheet.css" >
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="icon" href="../Imagens/LogoWhite1.png">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <title style="font-family: fantasy">C - Contact Me</title>
+    <link rel="icon" href="../Imagens/LogoWhite1.png">
+
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../CSS/HexaButton.css">
+    <link rel="stylesheet" href="../CSS/Contact.css">
+    <link rel="stylesheet" href="../CSS/Top-Bar.css">
+    <link rel="stylesheet" href="../CSS/ResponsiveLayout.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f4560917fd.js" crossorigin="anonymous"></script>
+
+</head>
 
 <body>
 
@@ -14,68 +27,89 @@
 
     <div class="nav-bar" id="nav-bar">
         <div class="nav-logo">
-            <img src="../Imagens/LogoWhite1.png" alt="Logo" onclick="window.location.href='../Home'">
+            <img src="../Imagens/LogoWhite1.png" style="width: 75px;">
+            <img class="name" src="../Imagens/NomeWhite.png" style="height: 40px;margin: 10px;">
         </div>
+
         <div class="nav-link" id="nav-link">
             <i class="fa fa-close" onclick="closeMenuRight()"></i>
 
-            <ul>
-                <a href="../Home"><li>HOME</li></a>
-                <a href="../Projects"><li>PROJECTS</li></a>
+            <ul class="hexagon-container">
+
+                <a class="hexagon color-sass" href="../Home"> <li class="fas fa-home" style="font-size: 25px"  ></li> </a>
+                <a class="hexagon color-sass" href="../Projects"> <li class="fas fa-laptop-code" style="font-size: 25px"  ></li>  </a>
+                <a class="hexagon color-sass" href="../AboutUs"> <li class="fas fa-address-card" style="font-size: 25px"  ></li>  </a>
 
             </ul>
-            <button type="button" class="btn" onclick="window.location.href='../Contacts'">CONTACT</button>
 
-            <div class="social-icons" id="social-icons-right" style="display: none">
+            <ul class="hexagon-container" style="bottom: 0;position: absolute;display: inline-block;">
 
-                <a target="_blank" href="https://www.linkedin.com/in/kaelithu/"> <i  class="fa fa-linkedin"  ></i></a>
-                <a target="_blank" href="https://www.instagram.com/_saiednac_/"><i class="fa fa-instagram" ></i></a>
-                <a  target="_blank" href="https://www.facebook.com/saiednac/"><i  class="fa fa-facebook" ></i></a>
+            </ul>
 
-                <img src="../Imagens/cgd.png" class="profile" alt="Candeias">
-            </div>
+            <div  class="color-css dif-button" style="float: right" onclick="window.location.href='../Contacts'"  > <i class="fas fa-paper-plane" style="font-size: 25px;"  ></i></div>
+
         </div>
         <i class="fa fa-bars" onclick="showMenuRight()"></i>
+
+
     </div>
+
     <div class="contact_form">
 
-        <div class="form_text">
-            <h1>Do you have a new project?<br> <spam>Contact us!</spam></h1>
-            <br>
-            <h2>Do you have a project that you want to bring to life? Talk to us! We will make a plan for your project to make sure you get the best.</h2>
-        </div>
-
-        <form action="https://formspree.io/maypzekn" method="POST">
-            <h1>SEND US A MESSAGE</h1>
-
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <input type="text" id="email" name="_replyto" placeholder="Email" required>
-            <label for="type"></label><select name="type" id="type">
-                <option value="App Design">App Desgin</option>
-                <option value="Build App">Build App</option>
-                <option value="Full Project">Full Project</option>
-                <option value="Others">Others</option>
-            </select>
-            <textarea id="message" name="subject" placeholder="Message" required></textarea>
-
-            <div class="bttn_submit">   <input type="submit" value="SEND"> </div>
-
-        </form>
+    <div class="form_text">
+        <h1>Do you have a new project?<br> <spam>Contact us!</spam></h1>
+        <br>
+        <h2>Do you have a project that you want to bring to life? Talk to us! We will make a plan for your project to make sure you get the best.</h2>
     </div>
+
+    <form action="https://formspree.io/maypzekn" method="POST">
+        <h1>SEND US A MESSAGE</h1>
+
+        <input type="text" id="name" name="name" placeholder="Name" required>
+        <input type="text" id="email" name="_replyto" placeholder="Email" required>
+        <label for="type"></label><select name="type" id="type">
+        <option value="App Design">App Desgin</option>
+        <option value="Build App">Build App</option>
+        <option value="Full Project">Full Project</option>
+        <option value="Others">Others</option>
+    </select>
+        <textarea id="message" name="subject" placeholder="Message" required></textarea>
+
+        <div class="bttn_submit">   <input type="submit" value="SEND"> </div>
+
+    </form>
+</div>
 </div>
 
 <div class="vertical-bar" id="vertical-bar" >
 
-
     <div class="social-icons" id="social-icons">
 
+        <a class="hexagonSocial color-sass1" target="_blank" href="https://www.facebook.com/saiednac/"> <li  class="fa fa-facebook" ></li></a>
+        <a class="hexagonSocial color-sass1" target="_blank" href="https://twitter.com/KAELITHU"> <li  class="fa fa-twitter" ></li></a>
+        <a class="hexagonSocial color-sass1" target="_blank" href="https://www.instagram.com/_saiednac_/"> <li class="fa fa-instagram" ></li></a>
+        <a class="hexagonSocial color-sass1" target="_blank" href="https://www.linkedin.com/in/kaelithu/"> <li  class="fa fa-linkedin"  ></li></a>
 
-        <a  target="_blank" href="https://www.facebook.com/saiednac/"><i id="fa-facebook" class="fa fa-facebook" ></i></a>
-        <a target="_blank" href="https://www.instagram.com/_saiednac_/"><i id="fa-instagram" class="fa fa-instagram" ></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/kaelithu/"> <i id="fa-linkedin" class="fa fa-linkedin" ></i></a>
     </div>
-</div>
 
+</div>
+<script>
+
+
+    function closeMenuRight() {
+        document.getElementById("nav-link").style.right = "-210px";
+        document.getElementById("Salsa-right").style.display = "none";
+        document.getElementById("social-icons-right").style.display = "none";
+
+    }
+    function showMenuRight() {
+        document.getElementById("nav-link").style.right = "0";
+        document.getElementById("Salsa-right").style.display = "block";
+        document.getElementById("social-icons-right").style.display = "block";
+    }
+
+
+</script>
 
 </body>
 </html>

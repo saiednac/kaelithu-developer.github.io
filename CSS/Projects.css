@@ -1,0 +1,30 @@
+
+.projects { color: #fff; margin: 0 120px;
+
+	}
+.project-hexagon img {
+	width: 120px;
+	}
+
+/* */
+
+.app{margin: 5px 140px; display: flex; flex-direction: row;}
+
+.app_info{
+	transition: .5s;
+	margin: 0 25px;
+	display:block;
+	width: 100%; height: available;
+	float: right;background-color: rgba(255,255,255,0.4);
+	}
+
+.app_info h1{ text-align: left; font-weight: bold; width: 100%;
+	color: white;  font-family: "Candara", serif;
+	margin: 15px 25px; float: left; font-size: 22px;
+	}
+.app_info h2{ text-align: left; font-weight: lighter; width: 100%;
+	color: white;  font-family: "Candara Light", serif;
+	margin: 0 25px; float: left; font-size: 22px;
+	}
+.app_info spam{color:#000; font-weight: lighter }
+

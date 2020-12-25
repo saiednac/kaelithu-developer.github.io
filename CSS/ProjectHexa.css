@@ -1,0 +1,98 @@
+:root {
+	/* Change this to change the appearance of the hexaons */
+	--hex-width--project: 150px;
+	--hex-between--project: 20px;
+
+	/* Other hexagon dimentions */
+	--hex-height--project: calc(var(--hex-width--project) / 1.73 /* sqrt(3) */);
+	--hex-margin--project: calc(var(--hex-width--project) / 2);
+	--hex-border--project: calc(var(--hex-margin--project) / 1.73 /* sqrt(3) */);
+	--hex-transition--project: all .2s ease;
+
+	/* Colors */
+	--color-hex-default--project: #000000;
+	--color-hex-hover--project:   #3c6c8b;
+
+	--color-project:     #ffffff;
+	}
+
+/* Hexagons */
+.project-hexagon-container {
+	display: grid;
+	grid-template-columns: var(--hex-width--project) var(--hex-width--project) var(--hex-width--project) var(--hex-width--project) var(--hex-width--project) var(--hex-width--project);
+	grid-auto-rows: calc(var(--hex-width--project) - 28.87px/2);
+	grid-gap: var(--hex-between--project) var(--hex-between--project);
+	padding-bottom: var(--hex-border--project);
+	}
+.project-hexagon {
+	align-items: center;
+	background-color: var(--color-hex-default--project);
+	cursor: pointer;
+	display: flex;
+	fill: white;
+	color: #282828;
+	font-size: 25px; font-family: fantasy;
+	height: var(--hex-height--project);
+	justify-content: center;
+	margin: var(--hex-border--project) 0;
+	position: relative;
+	transition: var(--hex-transition--project);
+	width: var(--hex-width--project);
+	}
+
+.project-hexagon::after,
+.project-hexagon::before {
+	border-left: var(--hex-margin--project) solid transparent;
+	border-right: var(--hex-margin--project) solid transparent;
+	content: "";
+	left: 0;
+	position: absolute;
+	transition: var(--hex-transition--project);
+	width: 0;
+	}
+.project-hexagon::after {
+	border-top: var(--hex-border--project) solid var(--color-hex-default);
+	top: 100%;
+	width: 0;
+	}
+.project-hexagon::before {
+	border-bottom: var(--hex-border--project) solid var(--color-hex-default);
+	bottom: 100%;
+	}
+
+.project-hexagon:hover {
+	background-color: var(--color-hex-hover--project);
+	}
+.project-hexagon:hover::after,
+.project-hexagon:hover::before {
+	border-top-color: var(--color-hex-hover--project);
+	border-bottom-color: var(--color-hex-hover--project);
+	}
+
+.project-hexagon:nth-child(12n +11),
+
+.project-hexagon:nth-child(12n + 7),
+.project-hexagon:nth-child(12n + 8),
+.project-hexagon:nth-child(12n + 9),
+.project-hexagon:nth-child(12n + 10),
+.project-hexagon:nth-child(12n + 12) {
+	margin-left: calc(var(--hex-width--project) / 2 + var(--hex-between--project) / 2);
+	}
+
+.hexagon > svg {
+	height: 75%;
+	transition: var(--hex-transition--project);
+	}
+
+/* Colors */
+.color-project {
+	background-color: var(--color-project);
+	}
+.color-project::after,
+.color-project::before {
+	border-top-color: var(--color-project);
+	border-bottom-color: var(--color-project);
+	}
+.color-project:hover {
+	fill: var(--color-project);
+	}

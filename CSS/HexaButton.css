@@ -1,0 +1,267 @@
+/* TOP MENU */
+:root {
+	/* Change this to change the appearance of the hexaons */
+	--hex-width: 50px;
+	--hex-between: 25px;
+
+	/* Other hexagon dimentions */
+	--hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
+	--hex-margin: calc(var(--hex-width) / 2);
+	--hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
+	--hex-transition: all .2s ease;
+
+	/* Colors */
+	--color-hex-default: #00000000;
+	--color-hex-hover:   #3c6c8b;
+	--color-hex_none-hover:   #ffffff;
+
+	--color-sass:        #ffffff;
+
+	--color-css:        #3c6c8b;
+
+	}
+
+/* Hexagons */
+.hexagon-container {
+	float: left;
+	display: inline-block;
+	grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width);
+	grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
+	grid-gap: var(--hex-between) var(--hex-between);
+	padding-bottom: var(--hex-border);
+	}
+.hexagon {
+	color: #282828;
+	align-items: center;
+	background-color: var(--color-hex-default);
+	cursor: pointer;
+	display: inline-block;
+	fill: white;
+	height: var(--hex-height);
+	margin: var(--hex-border);
+	position: relative;
+	transition: var(--hex-transition);
+	width: var(--hex-width);
+	}
+
+.hexagon::after,
+.hexagon::before {
+	border-left: var(--hex-margin) solid transparent;
+	border-right: var(--hex-margin) solid transparent;
+	content: "";
+	left: 0;
+	position: absolute;
+	transition: var(--hex-transition);
+	width: 0;
+	}
+.hexagon::after {
+	border-top: var(--hex-border) solid var(--color-hex-default);
+	top: 100%;
+	width: 0;
+	}
+.hexagon::before {
+	border-bottom: var(--hex-border) solid var(--color-hex-default);
+	bottom: 100%;
+	}
+
+.hexagon:hover {
+	background-color: var(--color-hex-hover); color: white;
+	}
+.hexagon:hover::after,
+.hexagon:hover::before {
+	border-top-color: var(--color-hex-hover);
+	border-bottom-color: var(--color-hex-hover);
+	}
+
+.hexagon_none {
+	color: #282828;
+	align-items: center;
+	background-color: var(--color-hex-default);
+	display: flex;
+	fill: white;
+	height: var(--hex-height);
+	justify-content: center;
+	margin: var(--hex-border) 0;
+	position: relative;
+	transition: var(--hex-transition);
+	width: var(--hex-width);
+	}
+
+.dif-button {
+	color: #ffffff;
+	align-items: center;
+	background-color: var(--color-hex-default);
+	display: flex;
+	cursor: pointer;
+
+	fill: white;
+	height: var(--hex-height);
+	justify-content: center;
+	margin: var(--hex-border) 40px;
+	position: relative;
+	transition: var(--hex-transition);
+	width: var(--hex-width);
+	}
+
+.dif-button::after,
+.dif-button::before {
+	border-left: var(--hex-margin) solid transparent;
+	border-right: var(--hex-margin) solid transparent;
+	content: "";
+	left: 0;
+	position: absolute;
+	transition: var(--hex-transition);
+	width: 0;	cursor: pointer;
+
+	}
+.dif-button::after {
+	border-top: var(--hex-border) solid var(--color-hex-default);
+	top: 100%;
+	width: 0;
+	}
+.dif-button::before {
+	border-bottom: var(--hex-border) solid var(--color-hex-default);
+	bottom: 100%;
+	}
+
+.dif-button:hover {
+	background-color: var(--color-hex_none-hover); color: #282828;
+	}
+.dif-button:hover::after,
+.dif-button:hover::before { color: #282828;
+	border-top-color: var(--color-hex_none-hover);
+	border-bottom-color: var(--color-hex_none-hover);
+	}
+
+.hexagon:nth-child(8n + 5),
+.hexagon:nth-child(8n + 6),
+.hexagon:nth-child(8n + 7),
+.hexagon:nth-child(8n + 8) {
+	margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+	}
+
+.dif{display: none;}
+
+/* SOCIAL NETWORK */
+:root {
+	/* Change this to change the appearance of the hexaons */
+	--hex-width1: 50px;
+	--hex-between1: 20px;
+
+	/* Other hexagon dimentions */
+	--hex-height1: calc(var(--hex-width1) / 1.73 /* sqrt(3) */);
+	--hex-margin1: calc(var(--hex-width1) / 2);
+	--hex-border1: calc(var(--hex-margin1) / 1.73 /* sqrt(3) */);
+	--hex-transition1: all .2s ease;
+
+	/* Colors */
+	--color-hex-default1: #000000;
+	--color-hex-hover1:   #3c6c8b;
+
+	--color-sass1:        #ffffff;
+
+	}
+
+/* HexagonsSocial */
+.hexagon-containerSocial {
+	float: right;
+	display: grid;
+	grid-template-columns: var(--hex-width1) var(--hex-between1) ;
+	grid-auto-rows: calc(var(--hex-width1) - 28.87px/2);
+	grid-gap: var(--hex-between1) var(--hex-between1)  ;
+	padding-bottom: var(--hex-border1);
+	}
+.hexagonSocial {
+	font-size: 25px;
+	color: #282828;	cursor: pointer;
+
+	align-items: center;
+	background-color: var(--color-hex-default1);
+	display: flex;
+	fill: #282828;
+	height: var(--hex-height1);
+	justify-content: center;
+	margin: var(--hex-border1) 0 20px 0px;
+	position: relative;
+	transition: var(--hex-transition1);
+	width: var(--hex-width1);
+	}
+
+
+.hexagonSocial::after,
+.hexagonSocial::before {
+	border-left: var(--hex-margin1) solid transparent;
+	border-right: var(--hex-margin1) solid transparent;
+	content: "";
+	left: 0;
+	position: absolute;
+	transition: var(--hex-transition1);
+	width: 0;
+	}
+.hexagonSocial::after {
+	border-top: var(--hex-border1) solid var(--color-hex-default1);
+	top: 100%;
+	width: 0;
+	}
+.hexagonSocial::before {
+	border-bottom: var(--hex-border1) solid var(--color-hex-default1);
+	bottom: 100%;
+	}
+
+.hexagonSocial:hover {
+	background-color: var(--color-hex-hover); color: #ffffff;text-decoration: none;
+	}
+.hexagonSocial:hover::after,
+.hexagonSocial:hover::before { color: #282828;
+	border-top-color: var(--color-hex-hover);
+	border-bottom-color: var(--color-hex-hover);
+
+	}
+
+.hexagonSocial:nth-child(1),
+.hexagonSocial:nth-child(3) {
+	margin-left: calc(var(--hex-width1) / 2 + var(--hex-between1) /3);
+	}
+
+
+
+/* Colors */
+.color-sass1 {
+	background-color: var(--color-sass1);
+	}
+.color-sass1::after,
+.color-sass1::before {
+	border-top-color: var(--color-sass1);
+	border-bottom-color: var(--color-sass1);
+	}
+.color-sass1:hover {
+	fill: var(--color-sass1);
+	}
+
+.color-sass {
+	background-color: var(--color-sass);
+	}
+.color-sass::after,
+.color-sass::before {
+	border-top-color: var(--color-sass);
+	border-bottom-color: var(--color-sass);
+	}
+.color-sass:hover {
+	fill: var(--color-sass);
+	}
+
+
+.color-css {
+	background-color: var(--color-css);
+	}
+.color-css::after,
+.color-css::before {
+	border-top-color: var(--color-css);
+	border-bottom-color: var(--color-css);
+	}
+.color-css:hover {
+	fill: var(--color-css);
+	}
+
+
+

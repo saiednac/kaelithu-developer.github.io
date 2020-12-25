@@ -1,0 +1,80 @@
+.contact_form {
+	margin: 0 120px;
+	color: #fff; display: flex; flex-direction: row;
+	}
+
+.contact_form .form_text{
+	width: 45%; display: block;
+	height:available;
+	}
+
+.form_text h1 {
+	margin: 15px 25px; font-family: "Candara Light", serif; font-size: 30px;  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	}
+
+.form_text h1 spam { color:  #3c6c8b; font-size: 30px; font-weight: bolder; }
+
+.form_text h2 { -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;margin: 15px 25px; font-family: "Candara Light", serif; font-size: 17px; font-weight: lighter; width: 80%; text-align: justify }
+
+
+.contact_form form {	width: 50%; display: block; padding: 5px 5px; float: left;	}
+
+form h1 { -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; margin: 15px 5px; font-family: "Candara Light", serif; font-size: 20px;	}
+
+.contact_form select{
+	width: 60%;
+	padding: 12px 15px;
+	margin: 5px 0;font-family: "Candara Light", serif; font-weight: bold;
+	box-sizing: border-box; border-radius: 5px; border: 0;
+	}
+
+.contact_form select option {
+	font-size: 15px; zoom: 1.2;
+	}
+.contact_form input[type=text] {
+	width: 60%;
+	padding: 12px 20px;
+	margin: 5px 0;font-family: "Candara Light", serif; font-weight: bold;
+	box-sizing: border-box; border-radius: 5px; border: 0;
+	}
+
+.contact_form textarea {
+	width: 60%; height: 100px; margin: 5px 0;
+	padding: 12px 20px; font-family: "Candara Light", serif; font-weight: bold;
+	resize: none;
+	box-sizing: border-box; border-radius: 5px; border: 0;
+	}
+
+form .bttn_submit {width: 60%}
+
+.contact_form input[type=submit] {
+	float: right;
+	padding: 10px 20px;
+	border: 0;
+	background: #3c6c8b;
+	color: #282828;
+	font-weight: bold;
+	cursor: pointer; border-radius: 5px;
+	}
+
+.contact_form input[type=submit]:hover {
+
+	background: #282828;
+	color: #ffffff;
+
+	}

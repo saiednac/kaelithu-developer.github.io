@@ -1,0 +1,35 @@
+
+.banner-tittle {
+	margin: 80px 150px; height: available; position: absolute;
+	color: #fff;
+	}
+
+.banner-tittle h1 {  -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-size: 64px;
+	margin-bottom: 30px;
+	}
+
+.banner-tittle h1 .tittle {
+	color: #3c6c8b;
+	}
+
+.banner-tittle h1 .phrase {
+	font-size: 50px;
+	}
+.btn {
+	padding: 10px 20px;
+	border: 0;
+	background: #3c6c8b;
+	font-weight: bold;
+	cursor: pointer;
+
+	}
+
+.btn:hover{ color: white;
+	background: #282828;
+	}

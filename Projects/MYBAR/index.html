@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title style="font-family: fantasy">C - Projects</title>
+    <link rel="icon" href="../../Imagens/LogoWhite1.png">
+
+    <link rel="stylesheet" href="../../CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../../CSS/HexaButton.css">
+    <link rel="stylesheet" href="../../CSS/Banner-Tittle.css">
+    <link rel="stylesheet" href="../../CSS/Top-Bar.css">
+    <link rel="stylesheet" href="../../CSS/Projects.css">
+    <link rel="stylesheet" href="../../CSS/ProjectHexa.css">
+    <link rel="stylesheet" href="../../CSS/ResponsiveLayout.css">
+
+
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f4560917fd.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<div class="background">
+
+    <div class="nav-bar" id="nav-bar">
+        <div class="nav-logo">
+            <img src="../../Imagens/LogoWhite1.png" style="width: 75px;">
+            <img class="name" src="../../Imagens/NomeWhite.png" style="height: 40px;margin: 10px;">
+        </div>
+
+        <div class="nav-link" id="nav-link">
+            <i class="fa fa-close" onclick="closeMenuRight()"></i>
+
+            <ul class="hexagon-container">
+
+                <a class="hexagon color-sass" href="../../Home"> <li class="fas fa-home" style="font-size: 25px"  ></li> </a>
+                <a class="hexagon color-sass" href="../../Projects"> <li class="fas fa-laptop-code" style="font-size: 25px"  ></li>  </a>
+                <a class="hexagon color-sass" href="../../AboutUs"> <li class="fas fa-address-card" style="font-size: 25px"  ></li>  </a>
+
+            </ul>
+
+            <ul class="hexagon-container" style="bottom: 0;position: absolute;display: inline-block;">
+
+            </ul>
+
+            <div  class="color-css dif-button" style="float: right" onclick="window.location.href='../../Contacts'"  > <i class="fas fa-paper-plane" style="font-size: 25px;"  ></i></div>
+
+        </div>
+        <i class="fa fa-bars" onclick="showMenuRight()"></i>
+
+
+    </div>
+
+    <div class="app">
+
+
+        <div class=" w3-display-container" style="width: 20%">
+            <img class="nature" src="ScreenShots/1.jpg" width="100%">
+            <img class="nature" src="ScreenShots/2.jpg" width="100%">
+            <img class="nature" src="ScreenShots/3.jpg" width="100%">
+            <img class="nature" src="ScreenShots/4.jpg" width="100%">
+            <img class="nature" src="ScreenShots/5.jpg" width="100%">
+            <img class="nature" src="ScreenShots/6.jpg" width="100%">
+            <img class="nature" src="ScreenShots/7.jpg" width="100%">
+            <img class="nature" src="ScreenShots/8.jpg" width="100%">
+            <img class="nature" src="ScreenShots/9.jpg" width="100%">
+
+            <script>
+                w3.slideshow(".nature", 2000);
+            </script>
+
+        </div>
+
+
+        <div class="app_info">
+
+            <h1><spam>Application Name:</spam>  MYBAR </h1>
+            <h2><spam>Details:</spam> Apliccation built for Android. <br> <spam>Resources:</spam>
+                <br>- Sign In / Sign Up
+                <br>- Add New Cards
+                <br>- Add Products To Cards
+                <br>- Card Historic
+                <br>- Manage Products and Cards ( Add / Edit / Remove )
+                <br>- Disable Cards
+            </h2>
+
+
+        </div>
+
+
+
+    </div>
+
+</div>
+
+<div class="vertical-bar" id="vertical-bar" >
+
+    <div class="social-icons" id="social-icons">
+
+        <a class="hexagonSocial color-sass1" target="_blank" href="https://www.facebook.com/saiednac/"> <li  class="fa fa-facebook" ></li></a>
+        <a class="hexagonSocial color-sass1" target="_blank" href="https://twitter.com/KAELITHU"> <li  class="fa fa-twitter" ></li></a>
+        <a class="hexagonSocial color-sass1" target="_blank" href="https://www.instagram.com/_saiednac_/"> <li class="fa fa-instagram" ></li></a>
+        <a class="hexagonSocial color-sass1" target="_blank" href="https://www.linkedin.com/in/kaelithu/"> <li  class="fa fa-linkedin"  ></li></a>
+
+    </div>
+
+</div>
+<script>
+
+
+    function closeMenuRight() {
+        document.getElementById("nav-link").style.right = "-210px";
+        document.getElementById("Salsa-right").style.display = "none";
+        document.getElementById("social-icons-right").style.display = "none";
+
+    }
+    function showMenuRight() {
+        document.getElementById("nav-link").style.right = "0";
+        document.getElementById("Salsa-right").style.display = "block";
+        document.getElementById("social-icons-right").style.display = "block";
+    }
+
+
+</script>
+
+
+</body>
+</html>

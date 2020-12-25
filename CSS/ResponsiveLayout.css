@@ -1,0 +1,282 @@
+.nav-bar .fa {
+	display: none;
+	}
+@media (max-width: 860px) {
+
+	.vertical-bar {
+		display: none;
+		}
+
+	.banner-tittle {
+		margin: 80px 40px;
+		}
+
+	.banner-tittle h1 {
+		font-size: 50px;
+		}
+
+	.nav-bar {padding: 25px 30px;}
+
+	.fa-bars {position: absolute; right: 20px; top: 15px;}
+
+
+	.hexagon-container .fa {display: block}
+	.nav-bar .fa {display: block;
+		color: #fff;
+		margin: 25px 25px;
+		font-size: 22px;
+		cursor: pointer;}
+
+	.nav-link {
+		margin-top: 0;
+		height: 120vh;
+		width: 120px;
+		background: #000;
+		right: -120px;
+		top: 0;
+		position: absolute;
+		z-index: 2;
+		transition: .5s;
+		}
+
+	.nav-link ul a {
+		display: block;
+		}
+
+	.nav-link .btn {
+		float: none;
+		margin-left: 25px;
+		margin-top: 10px;
+
+		}
+
+	.contact_form {
+		margin: 0 40px;
+		}
+
+	.projects {
+		margin-top: 100px;
+
+		}
+
+	.projects h1 {
+		font-size: 35px;
+
+		}
+
+	.social-icons {
+		width: 100px;
+		font-size: 25px;
+		background: #3c6c8b;
+		text-align: center;
+		padding-top: 5px;
+		position: absolute;
+		display: inline-block;
+		left: 0;
+		height: 60px;
+
+		}
+
+
+
+	#social-icons-right {bottom: 0;}
+
+	.social-icons .fa {
+		margin: 5px 5px;
+		display: inline-block;
+		padding: 10px;
+		cursor: pointer;
+		float: right;
+
+		}
+
+	.profile { margin-left: 5px;
+		display: inline-block;
+		padding: 5px;
+		cursor: pointer;
+		float: right;
+		width: 45px}
+
+	.about_us {
+		margin: 5px 40px; display: inline-block;
+		}
+
+	.about_us img {
+		width: 150px;
+		height: 200px;
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: inline-block;
+		}
+
+
+	.about_us_tittle {
+		background-color: #3c6c8b; margin: 0 40px; padding: 2px 2px;
+		}
+
+	.about_us_tittle h1 {font-size: 20px; text-align: center}
+
+	.about_us .text_container { display: inline-block;
+		-webkit-box-sizing: border-box;
+		float: right; width: calc(100% - 155px);
+		height: 200px; margin: 0;
+		}
+
+	.text_container div {-webkit-box-sizing: border-box;
+		display: inline-block;
+		width: 100%; height: 200px;}
+
+	.about_us .CGD {margin-top: 5px}
+
+	.container_bottom .fa {float: left}
+
+	.container_bottom h1 {float: left}
+
+	#arrow_left {display: inline-block}
+
+	#arrow_right {display: none}
+
+
+	.about_us {
+		margin: 5px 40px;
+		}
+
+
+	.app{margin: 5px 40px; height: available}
+	.slideshow-container{width: 35%}
+	.app_info h1{ text-align: left; font-weight: bold; width: 100%;
+
+		margin: 15px 15px; float: left; font-size: 15px;
+		}
+	.app_info h2{ text-align: left; font-weight: lighter; width: 100%;
+
+		margin: 0 15px; float: left; font-size: 15px;
+		}
+	.app_info spam{color:#000; font-weight: lighter }
+
+	:root {
+		/* Change this to change the appearance of the hexaons */
+		--hex-width1: 50px;
+		--hex-between1: 20px;
+
+		/* Other hexagon dimentions */
+		--hex-height1: calc(var(--hex-width1) / 1.73 /* sqrt(3) */);
+		--hex-margin1: calc(var(--hex-width1) / 2);
+		--hex-border1: calc(var(--hex-margin1) / 1.73 /* sqrt(3) */);
+		--hex-transition1: all .2s ease;
+
+		/* Colors */
+		--color-hex-default1: #ffffff;
+		--color-hex-hover1:   #3c6c8b;
+
+		--color-sass1:        #ffffff;
+
+		}
+
+	/* HexagonsSocial */
+	.hexagon-container {
+		float: right;
+		display: grid;
+		grid-template-columns: var(--hex-width1) var(--hex-between1) ;
+		grid-auto-rows: calc(var(--hex-width1) - 28.87px/2);
+		grid-gap: var(--hex-between1) var(--hex-between1)  ;
+		padding-bottom: var(--hex-border1);
+		}
+	.hexagon {
+		font-size: 25px;
+		color: #282828;	cursor: pointer;
+
+		align-items: center;
+		background-color: var(--color-hex-default1);
+		display: flex;
+		fill: #282828;
+		height: var(--hex-height1);
+		justify-content: center;
+		margin: var(--hex-border1) 0 20px 0px;
+		position: relative;
+		transition: var(--hex-transition1);
+		width: var(--hex-width1);
+		}
+
+
+	.hexagon::after,
+	.hexagon::before {
+		border-left: var(--hex-margin1) solid transparent;
+		border-right: var(--hex-margin1) solid transparent;
+		content: "";
+		left: 0;
+		position: absolute;
+		transition: var(--hex-transition1);
+		width: 0;
+		}
+	.hexagon::after {
+		border-top: var(--hex-border1) solid var(--color-hex-default1);
+		top: 100%;
+		width: 0;
+		}
+	.hexagon::before {
+		border-bottom: var(--hex-border1) solid var(--color-hex-default1);
+		bottom: 100%;
+		}
+
+	.hexagon:hover {
+		background-color: var(--color-hex-hover); color: #ffffff;text-decoration: none;
+		}
+	.hexagon:hover::after,
+	.hexagon:hover::before { color: #282828;
+		border-top-color: var(--color-hex-hover);
+		border-bottom-color: var(--color-hex-hover);
+
+		}
+
+	.hexagon:nth-child(1),
+	.hexagon:nth-child(3),
+	.dif-button:nth-child(1){
+		margin-left: calc(var(--hex-width1) / 2 + var(--hex-between1) /3);
+		}
+
+	.dif-button {
+
+		margin: var(--hex-border) 35px ;
+margin-top: -32px;
+		}
+
+	}
+
+@media (max-width: 600px) {
+
+
+	.about_us img {
+		width: 65px;
+		height: 115px;
+
+		}
+
+	.about_us .CGD {margin-top: 90px}
+
+	.about_us .text_container {
+		float: right; width: calc(100% - 70px);
+		height: 200px; margin: 0;
+		}
+
+	.text_container .container_bottom {width: 100%; -webkit-box-sizing: border-box;}
+
+	.text_container .container_top {width: 100%; -webkit-box-sizing: border-box;}
+
+
+	}
+
+
+@media (max-width: 400px) {
+
+	.projects { color: #fff; margin: 0 60px;
+
+		}
+
+	.projects h1 { text-align: center;
+		font-size: 45px;
+		margin-top: 100px;
+		}
+
+
+	}
