@@ -15,6 +15,7 @@
 		font-size: 50px;
 		}
 
+	.nav-logo .name{display: none}
 	.nav-bar {padding: 25px 30px;}
 
 	.fa-bars {position: absolute; right: 20px; top: 15px;}
